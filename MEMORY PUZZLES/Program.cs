@@ -14,7 +14,7 @@ namespace MEMORY_PUZZLES
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            Application.EnableVisualStyles();//KJHGJHG
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
