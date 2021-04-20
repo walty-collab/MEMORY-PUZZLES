@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 namespace MEMORY_PUZZLES
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form// цвет Misty rose
     {
         Random random = new Random();
         List<string> icons = new List<string>()
         {
-            "!", "!", "d", "d", "g", "g", "c", "c","w", "w", "a", "a","n", "n", "m", "m"
-        };        
+            "!", "!", "$", "$", "o", "o", "%", "%","f", "f", ".", ".","t", "t", "m", "m"
+        };
+        Label firstClicked, secondClicked;
         public Form1()
         {
             InitializeComponent();
@@ -31,11 +32,106 @@ namespace MEMORY_PUZZLES
                 if (tableLayoutPanel1.Controls[i] is Label)
                     label = (Label)tableLayoutPanel1.Controls[i];
                 else
-                    continue;
+                    continue;                
                 randomnumber = random.Next(0,icons.Count);
                 label.Text = icons[randomnumber];
                 icons.RemoveAt(randomnumber);
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+        private void label13_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            Label clicedLabel = sender as Label;
+            clicedLabel.ForeColor = Color.MistyRose;
+        } 
+     
     }
 }
