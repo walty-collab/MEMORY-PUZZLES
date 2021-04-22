@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace MEMORY_PUZZLES
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form// цвет Misty rose
     {
         Random random = new Random();
         List<string> icons = new List<string>()
