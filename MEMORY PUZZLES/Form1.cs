@@ -21,7 +21,6 @@ namespace MEMORY_PUZZLES
 
         Label firstClicked, secondClicked;
        
-
         public Form1()
         {
 
