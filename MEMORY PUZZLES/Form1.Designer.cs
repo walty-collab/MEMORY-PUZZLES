@@ -49,6 +49,7 @@ namespace MEMORY_PUZZLES
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +86,7 @@ namespace MEMORY_PUZZLES
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(510, 475);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(510, 434);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label16
@@ -94,9 +95,9 @@ namespace MEMORY_PUZZLES
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label16.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label16.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label16.Location = new System.Drawing.Point(386, 356);
+            this.label16.Location = new System.Drawing.Point(386, 326);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(119, 117);
+            this.label16.Size = new System.Drawing.Size(119, 106);
             this.label16.TabIndex = 15;
             this.label16.Text = "с";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,9 +109,9 @@ namespace MEMORY_PUZZLES
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label15.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label15.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label15.Location = new System.Drawing.Point(259, 356);
+            this.label15.Location = new System.Drawing.Point(259, 326);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(119, 117);
+            this.label15.Size = new System.Drawing.Size(119, 106);
             this.label15.TabIndex = 14;
             this.label15.Text = "с";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,9 +123,9 @@ namespace MEMORY_PUZZLES
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label14.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label14.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label14.Location = new System.Drawing.Point(132, 356);
+            this.label14.Location = new System.Drawing.Point(132, 326);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(119, 117);
+            this.label14.Size = new System.Drawing.Size(119, 106);
             this.label14.TabIndex = 13;
             this.label14.Text = "с";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,9 +137,9 @@ namespace MEMORY_PUZZLES
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label13.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label13.Location = new System.Drawing.Point(5, 356);
+            this.label13.Location = new System.Drawing.Point(5, 326);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(119, 117);
+            this.label13.Size = new System.Drawing.Size(119, 106);
             this.label13.TabIndex = 12;
             this.label13.Text = "с";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -150,9 +151,9 @@ namespace MEMORY_PUZZLES
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label12.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label12.Location = new System.Drawing.Point(386, 238);
+            this.label12.Location = new System.Drawing.Point(386, 218);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(119, 116);
+            this.label12.Size = new System.Drawing.Size(119, 106);
             this.label12.TabIndex = 11;
             this.label12.Text = "с";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -164,9 +165,9 @@ namespace MEMORY_PUZZLES
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label11.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label11.Location = new System.Drawing.Point(259, 238);
+            this.label11.Location = new System.Drawing.Point(259, 218);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(119, 116);
+            this.label11.Size = new System.Drawing.Size(119, 106);
             this.label11.TabIndex = 10;
             this.label11.Text = "с";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -178,9 +179,9 @@ namespace MEMORY_PUZZLES
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label10.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label10.Location = new System.Drawing.Point(132, 238);
+            this.label10.Location = new System.Drawing.Point(132, 218);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(119, 116);
+            this.label10.Size = new System.Drawing.Size(119, 106);
             this.label10.TabIndex = 9;
             this.label10.Text = "с";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -192,9 +193,9 @@ namespace MEMORY_PUZZLES
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label9.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label9.Location = new System.Drawing.Point(5, 238);
+            this.label9.Location = new System.Drawing.Point(5, 218);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(119, 116);
+            this.label9.Size = new System.Drawing.Size(119, 106);
             this.label9.TabIndex = 8;
             this.label9.Text = "с";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -206,9 +207,9 @@ namespace MEMORY_PUZZLES
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label8.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label8.Location = new System.Drawing.Point(386, 120);
+            this.label8.Location = new System.Drawing.Point(386, 110);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 116);
+            this.label8.Size = new System.Drawing.Size(119, 106);
             this.label8.TabIndex = 7;
             this.label8.Text = "с";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -220,9 +221,9 @@ namespace MEMORY_PUZZLES
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label7.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label7.Location = new System.Drawing.Point(259, 120);
+            this.label7.Location = new System.Drawing.Point(259, 110);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 116);
+            this.label7.Size = new System.Drawing.Size(119, 106);
             this.label7.TabIndex = 6;
             this.label7.Text = "с";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -234,9 +235,9 @@ namespace MEMORY_PUZZLES
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label6.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label6.Location = new System.Drawing.Point(132, 120);
+            this.label6.Location = new System.Drawing.Point(132, 110);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 116);
+            this.label6.Size = new System.Drawing.Size(119, 106);
             this.label6.TabIndex = 5;
             this.label6.Text = "с";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -248,9 +249,9 @@ namespace MEMORY_PUZZLES
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Webdings", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.label5.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label5.Location = new System.Drawing.Point(5, 120);
+            this.label5.Location = new System.Drawing.Point(5, 110);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 116);
+            this.label5.Size = new System.Drawing.Size(119, 106);
             this.label5.TabIndex = 4;
             this.label5.Text = "с";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,7 +265,7 @@ namespace MEMORY_PUZZLES
             this.label4.ForeColor = System.Drawing.Color.DarkViolet;
             this.label4.Location = new System.Drawing.Point(386, 2);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 116);
+            this.label4.Size = new System.Drawing.Size(119, 106);
             this.label4.TabIndex = 3;
             this.label4.Text = "с";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -278,7 +279,7 @@ namespace MEMORY_PUZZLES
             this.label3.ForeColor = System.Drawing.Color.DarkViolet;
             this.label3.Location = new System.Drawing.Point(259, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 116);
+            this.label3.Size = new System.Drawing.Size(119, 106);
             this.label3.TabIndex = 2;
             this.label3.Text = "с";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -292,7 +293,7 @@ namespace MEMORY_PUZZLES
             this.label2.ForeColor = System.Drawing.Color.DarkViolet;
             this.label2.Location = new System.Drawing.Point(132, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 116);
+            this.label2.Size = new System.Drawing.Size(119, 106);
             this.label2.TabIndex = 1;
             this.label2.Text = "с";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -306,7 +307,7 @@ namespace MEMORY_PUZZLES
             this.label1.ForeColor = System.Drawing.Color.DarkViolet;
             this.label1.Location = new System.Drawing.Point(5, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 116);
+            this.label1.Size = new System.Drawing.Size(119, 106);
             this.label1.TabIndex = 0;
             this.label1.Text = "с";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -317,12 +318,25 @@ namespace MEMORY_PUZZLES
             this.timer1.Interval = 750;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.button1.Location = new System.Drawing.Point(12, 452);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(505, 47);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "ЗАНОВО";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(534, 511);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.ForeColor = System.Drawing.Color.GhostWhite;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -354,6 +368,7 @@ namespace MEMORY_PUZZLES
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

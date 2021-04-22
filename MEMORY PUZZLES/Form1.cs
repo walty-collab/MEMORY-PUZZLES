@@ -18,6 +18,10 @@ namespace MEMORY_PUZZLES
         {
             "!", "!", "$", "$", "o", "o", "%", "%","f", "f", ".", ".","t", "t", "m", "m"
         };
+        List<string> icons2 = new List<string>()
+        {
+            "!", "!", "$", "$", "o", "o", "%", "%","f", "f", ".", ".","t", "t", "m", "m"
+        };
 
         Label firstClicked, secondClicked;
        
@@ -93,10 +97,36 @@ namespace MEMORY_PUZZLES
                     return;
 
 
-            }
-
+            }            
             MessageBox.Show("   ПОЗДРАВЛЯЮ ВЫ ПРОШЛИ НАШУ НЕВЕРОЯТНО ТРУДНУЮ ИГРУ!!!!!!");
-            Close();
+            //Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            for (int i = 0; i < icons2.Count; i++)
+            {
+                icons.Add(icons2[i]);
+            }            
+            label1.ForeColor = Color.DarkViolet;
+            label2.ForeColor = Color.DarkViolet;
+            label3.ForeColor = Color.DarkViolet;
+            label4.ForeColor = Color.DarkViolet;
+            label5.ForeColor = Color.DarkViolet;
+            label6.ForeColor = Color.DarkViolet;
+            label7.ForeColor = Color.DarkViolet;
+            label8.ForeColor = Color.DarkViolet;
+            label9.ForeColor = Color.DarkViolet;
+            label10.ForeColor = Color.DarkViolet;
+            label11.ForeColor = Color.DarkViolet;
+            label12.ForeColor = Color.DarkViolet;
+            label13.ForeColor = Color.DarkViolet;
+            label14.ForeColor = Color.DarkViolet;
+            label15.ForeColor = Color.DarkViolet;
+            label16.ForeColor = Color.DarkViolet;
+
+            AssignsIconsSquares();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
