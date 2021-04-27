@@ -8,19 +8,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace MEMORY_PUZZLES
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form // цвет - Misty rose
     {
         Random random = new Random();
         List<string> icons = new List<string>()
         {
             "!", "!", "$", "$", "o", "o", "%", "%","f", "f", ".", ".","t", "t", "m", "m"
         };
+        List<string> icons2 = new List<string>()
+        {
+            "!", "!", "$", "$", "o", "o", "%", "%","f", "f", ".", ".","t", "t", "m", "m"
+        };
+
         Label firstClicked, secondClicked;
+       
         public Form1()
         {
+
             InitializeComponent();
+           
             AssignsIconsSquares();
         }    
         public void AssignsIconsSquares()
@@ -39,99 +48,100 @@ namespace MEMORY_PUZZLES
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+        private void label_Click(object sender, EventArgs e)
         {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        }
-        private void label2_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
+            if (firstClicked != null && secondClicked != null)
+                return;
+
+            Label clickedLabel = sender as Label;
+
+            if (clickedLabel == null)
+                return;
+
+            if (clickedLabel.ForeColor == Color.MistyRose)
+                return;
+
+            if(firstClicked == null)
+            {
+                firstClicked = clickedLabel;
+                firstClicked.ForeColor = Color.MistyRose;
+                return;
+            }
+
+            secondClicked = clickedLabel;
+            secondClicked.ForeColor = Color.MistyRose;
+
+            CheckForWinner();
+
+            if (firstClicked.Text == secondClicked.Text)
+            {
+                firstClicked = null;
+                secondClicked = null;
+            }
+            else
+            timer1.Start();
+
+
+            
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void CheckForWinner()
         {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
+            Label label;
+            for (int i = 0; i < tableLayoutPanel1.Controls.Count; i++)
+            {
+                label = tableLayoutPanel1.Controls[i] as Label;
+
+                if (label != null && label.ForeColor == label.BackColor)
+                    return;
+
+
+            }            
+            MessageBox.Show("   ПОЗДРАВЛЯЮ ВЫ ПРОШЛИ НАШУ НЕВЕРОЯТНО ТРУДНУЮ ИГРУ!!!!!!");
+            //Close();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
+            
+            for (int i = 0; i < icons2.Count; i++)
+            {
+                icons.Add(icons2[i]);
+            }            
+            label1.ForeColor = Color.DarkViolet;
+            label2.ForeColor = Color.DarkViolet;
+            label3.ForeColor = Color.DarkViolet;
+            label4.ForeColor = Color.DarkViolet;
+            label5.ForeColor = Color.DarkViolet;
+            label6.ForeColor = Color.DarkViolet;
+            label7.ForeColor = Color.DarkViolet;
+            label8.ForeColor = Color.DarkViolet;
+            label9.ForeColor = Color.DarkViolet;
+            label10.ForeColor = Color.DarkViolet;
+            label11.ForeColor = Color.DarkViolet;
+            label12.ForeColor = Color.DarkViolet;
+            label13.ForeColor = Color.DarkViolet;
+            label14.ForeColor = Color.DarkViolet;
+            label15.ForeColor = Color.DarkViolet;
+            label16.ForeColor = Color.DarkViolet;
+
+            AssignsIconsSquares();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
+            timer1.Stop();
+
+            firstClicked.ForeColor = firstClicked.BackColor;
+            secondClicked.ForeColor = secondClicked.BackColor;
+
+            firstClicked = null;
+            secondClicked = null;
+
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        }
-        private void label13_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-            Label clicedLabel = sender as Label;
-            clicedLabel.ForeColor = Color.MistyRose;
-        } 
+        
      
     }
 }
